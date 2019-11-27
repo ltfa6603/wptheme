@@ -27,7 +27,11 @@
 <header id="masthead" class="site-header">
 <?php if ( is_active_sidebar( 'header' ) ) : ?>
 	<div class="top_strip">
-	
+		<div class="container">
+					 	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+					 		<?php dynamic_sidebar( 'header' ); ?>
+					 	</div><!-- #primary-sidebar -->
+					 </div>
 					 </div>
 					 <?php endif; ?>
 		<div class="site-branding">
