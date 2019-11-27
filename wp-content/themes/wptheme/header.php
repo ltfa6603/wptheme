@@ -46,9 +46,6 @@
 			</div>
 
 		   <div class="col-lg-9">
-
-
-
 			   <div class="header_topright">
 <nav id="site-navigation" class="main-navigation">
 	<?php
