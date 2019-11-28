@@ -25,12 +25,15 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wptheme' ); ?></a>
 
 <header id="masthead" class="site-header">
-<?php if ( is_active_sidebar( 'header' ) ) : ?>
+<?php if ( is_active_sidebar( 'header-left' ) || is_active_sidebar( 'header-right' ) ) : ?>
 	<div class="top_strip">
 		<div class="container">
-					 	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-					 		<?php dynamic_sidebar( 'header' ); ?>
-					 	</div><!-- #primary-sidebar -->
+	<div class="row">
+		<div class="col-lg-4"><?php dynamic_sidebar( 'header-left' ); ?></div>
+		<div class="col-lg-8"><?php dynamic_sidebar( 'header-right' ); ?></div>
+	</div>
+					 		
+
 					 </div>
 					 </div>
 					 <?php endif; ?>
