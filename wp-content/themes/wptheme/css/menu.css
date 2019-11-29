@@ -1,9 +1,13 @@
-.main-navigation {padding: 10px 0 0;}
+.main-navigation {
+    padding-top: 9px;
+    width: auto;
+    float: none;
+}
 .main-navigation ul {
-	list-style: none;
-	margin: 0 -27px 0 0;
-	padding: 0;
-	display: inline-block;
+    list-style: none;
+    margin: 0 0 0 -35px;
+    padding: 0;
+    display: inline-block;
 }
 
 .main-navigation ul:after{
@@ -17,8 +21,7 @@
     position: relative;
     font-size: 14px;
     padding: 0;
-    margin: 0 10px;
-    text-transform: uppercase;
+    margin: 0 6px;
     font-weight: 500;
 }
 
@@ -30,12 +33,11 @@
 .main-navigation li.sale_btn a{
 	padding: 15px 20px;
 	background: #1d6dcf;
-	color: #fff;
+	color: #000;
 	border-radius: 6px;
 }
 .main-navigation li.sale_btn a:hover{
-	background: #d01920;
-	color: #fff;
+	color: #c28f33;
 }
 .main-navigation li.sale_btn a:before{
 	display: none
@@ -80,35 +82,25 @@
     display: block;
     text-decoration: none;
     padding:10px 18px;
-    color: #fff;
+    color: #000;
     position: relative;
 }
 
 .main-navigation a:hover {
-    color: #fff;
+    color: #c28f33;
 }
 
 .main-navigation li:hover > a, .main-navigation li.current_page_item > a{
-    color: #fff;
+    color: #c28f33;
 }
 
-
-.main-navigation ul.menu > li:hover > a:before, .main-navigation ul.menu > li.current_page_item > a:before{
-    width: 32px;
-    content: '';
-    border-top: 1px solid #1d6dcf;
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    margin-left: -16px; 
-}
 
 .main-navigation ul ul {
     position: absolute;
     top: 100%;
     left: -999em;
     z-index: 99999;
-    background:#2dc0e3;
+    background:#c28f33;
 }
 .main-navigation ul ul li {
     font-size: 14px;
@@ -128,7 +120,7 @@
 }
 
 .main-navigation ul ul a:hover{
-	background:#1d6dcf;
+	background:#000;
 	color: #fff;
 }
 

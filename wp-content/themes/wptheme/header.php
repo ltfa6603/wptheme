@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800|Open+Sans:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -28,7 +28,7 @@
 <?php if ( is_active_sidebar( 'header-left' ) || is_active_sidebar( 'header-right' ) ) : ?>
 	<div class="top_strip">
 		<div class="container">
-	<div class="row">
+	<div class="row align-items-center">
 		<div class="col-lg-4"><?php dynamic_sidebar( 'header-left' ); ?></div>
 		<div class="col-lg-8"><?php dynamic_sidebar( 'header-right' ); ?></div>
 	</div>
@@ -58,9 +58,10 @@
 		) );
 	?>
 
-    <!-- <div class="extra_btn"></div> -->
 
 </nav><!-- #site-navigation -->
+
+<?php get_search_form();?>
 					
 			               </div>
 
