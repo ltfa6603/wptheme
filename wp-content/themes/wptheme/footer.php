@@ -26,22 +26,25 @@
         <div class="footer-top">
         <div class="container">
         <div class="row">
-        <div class="col-lg-3 col-md-6"><?php dynamic_sidebar('footer-1');?></div>    
-        <div class="col-lg-2 col-md-6"><?php dynamic_sidebar('footer-2');?></div>    
-        <div class="col-lg-3 col-md-6"><?php dynamic_sidebar('footer-3');?></div>    
-        <div class="col-lg-4 col-md-6"><?php dynamic_sidebar('footer-4');?></div>    
+        <div class="col-lg-4 col-md-12"><?php dynamic_sidebar('footer-1');?></div>    
+        <div class="col-lg-4 col-md-12"><?php dynamic_sidebar('footer-2');?></div>    
+        <div class="col-lg-4 col-md-12"><?php dynamic_sidebar('footer-3');?></div>    
         </div>    
         </div>
         </div>
         
         <div class="site-info">
         	<div class="container">
-        	<div class="row">
-        		<div class="col-lg-12">
-        			Copyright &copy; <?php echo date(Y);?> | All rights reserved.  <br><a href="https://www.verveinnovation.com.au/website-design/" target="_blank">Website Design</a>, <a href="https://www.verveinnovation.com.au/seo-services/" target="_blank">SEO Services</a> by Verve Innovation - <a href="https://www.verveinnovation.com.au/" target="_blank">SEO Company Melbourne</a>	
+                        <div class="site-infowrap">
+        	<div class="row align-items-center">
+        		<div class="col-lg-6">
+                                Copyright&copy; 2019 |  Disability Law Center , All Right Reserved.	
         		</div>
 
+                        <div class="col-lg-6"><div class="footerlogoes"><img src="<?php echo get_template_directory_uri();?>/images/footer-logoes.png" alt=""></div></div>
+
         	</div>
+</div>
         	</div>
         
 		</div><!-- .site-info -->

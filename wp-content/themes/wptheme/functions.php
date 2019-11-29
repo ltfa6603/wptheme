@@ -161,26 +161,6 @@ register_sidebar( array(
 		'before_title'  => '<h6 class="widget-title">',
 		'after_title'   => '</h6>',
 	) );
-
-	 register_sidebar( array(
-		'name'          => esc_html__( 'Footer Four', 'wptheme' ),
-		'id'            => 'footer-4',
-		'description'   => esc_html__( 'Add widgets here.', 'wptheme' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	) );
-
-	 register_sidebar( array(
-		'name'          => esc_html__( 'Footer Gallery', 'wptheme' ),
-		'id'            => 'footer-gallery',
-		'description'   => esc_html__( 'Add widgets here.', 'wptheme' ),
-		'before_widget' => '<section id="%1$s" class="widget quickmenu2 %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	) );
 	
 }
 add_action( 'widgets_init', 'wptheme_widgets_init' );

@@ -908,14 +908,15 @@ content: '';
 /*.client_box .bx-wrapper ul li .helper{ margin-bottom: 1px;}*/
 .site-footer{
         padding: 40px 0 0;
-    background:#263238;
+    background:#000000;
     color: #fff;
 }
 
 .site-footer a{color:#fff}
 .site-footer a:hover{color: rgba(255,255,255,0.7)}
-.site-footer ul.menu{padding: 0; margin: 0; list-style: none;}
+.site-footer ul.menu{padding: 0; margin: 0; list-style: none; display: flex; flex-wrap: wrap}
 .site-footer ul.menu li{
+    width: 50%;
 margin: 0 0 8px;
     /*padding-left: 22px;*/
     position: relative;
@@ -934,21 +935,17 @@ margin: 0 0 8px;
     color: #fff;
 }*/
 .site-footer .widget-title, .site-footer h6{
-    color: rgba(255,255,255,0.6); font-weight: normal; font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
 }
 
-.site-footer .widget-title:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background: #1d6dcf;
+.site-footer .widget_media_image{
+    text-align: center;
 }
 
 
@@ -956,7 +953,12 @@ margin: 0 0 8px;
 .site-footer ul.cnss-social-icon i{font-size: 20px !important}
 .site-footer ul.cnss-social-icon li.cn-fa-icon a{
     line-height: 34px !important;
-    border: 1px solid #7f7f7f !important
+    border: none !important;
+    background: none !important;
+    width: 26px !important;
+    height: 20px !important;
+    padding: 0 !important;
+    line-height: 20px !important;
 }
 
 .footer_widget i.fa{color: #2c9320; margin-right: 6px;}
@@ -964,36 +966,17 @@ margin: 0 0 8px;
 .site-footer .quickmenu2 ul li{display: inline-block; width: 48%; vertical-align: top;}
 
 
-#mailpoet_form_1 .mailpoet_text{width: 100% !important; background: none; border: 1px solid rgba(255,255,255,0.1)}
-
-#mailpoet_form_1 .mailpoet_submit{width: 100%; background: #1499eb; padding: 10px 10px}
-
-
-.site-footer .wpcf7 input:not([type="submit"]), .site-footer .wpcf7 textarea{
-    background: none;
-    border-radius: 0;
-    border: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-    color: #fff;
-}
-
-.site-footer .wpcf7 textarea{
-    height: 70px;
-}
-
 .site-footer .site-info{
-    color: rgba(255, 255, 255, 0.4);
     padding: 15px 0 15px;
-    font-size: 12px;
-    text-align: center;
-    background: #383838;
 }
 
 .site-footer .site-info a{
     color: rgba(255, 255, 255, 0.5);
 }
-
-
+.site-footer .site-infowrap{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 13px;
+}
 
 ul.contactdetails{
     list-style: none;
@@ -1001,21 +984,22 @@ ul.contactdetails{
     padding: 0;
 }
 
-ul.contactdetails li{position: relative; margin: 0 0 10px 0; color: #000; padding-left: 24px;}
+ul.contactdetails li{position: relative; margin: 0 0 10px 0; color: #000; padding-left: 80px;}
 ul.contactdetails li i{
     position: absolute;
     left: 0;
-    top: 6px;
-    color: #000;
+    top: 0;
+    width: 77px;
+    font-style: normal;
 }
 ul.contactdetails li a{color: #000}
 
 footer ul.contactdetails li, footer ul.contactdetails li a{color: #fff}
 
 
-footer ul.contactdetails li i{
-    color:#1d6dcf
-}
+.site-footer .footerlogoes{text-align: right;}
+
+
 
 .wpcf7 label{display: block;}
 
